@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="web.css">
+    <title>Register</title>
+  <script type="text/javascript">
+    function validate(){
+      var ema=document.reg.email.value;
+      var pass=document.reg.psw.value;
+      if(ema=="" || ema=="null")
+      {
+        alert("Enter your email first");
+        return false;
+      }
+      else if(pass=="" || pass=="null"){
+        alert("Enter your password");
+        return false;
+      }
+      alert("successful");
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <div class="reg-body">
+  <h1>Register</h1>
+  <form name="reg" action="/action_page.php">
+    <div class="container">
+      <h2>Register</h2>
+      <center>
+      <p class="alert">Please fill this form to register.</p>
+      </center>
+      <br>
+      <hr>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" id="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+  
+      <label for="psw-repeat"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+      <hr>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+  
+      <button type="button" onclick="validate();" class="registerbtn">Register</button>
+    </div>
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a></p>
+    </div>
+  </form>
+  </div>
+</body>
+</html>
