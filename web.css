@@ -7,6 +7,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .home-sec{
   padding-bottom: 370px;
   background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(homebg.jpg);
@@ -18,6 +19,8 @@
     background:linear-gradient(rgba(19, 18, 18, 0.7),rgba(0,0,0,0.8));
     height: 100px;
     width: 100%;
+    position: fixed;
+    top:0;
 }
 .logo{
    color:white;
@@ -50,8 +53,9 @@ nav ul li a:hover{
 }
 .home-text h1{
   font-size: 60px;
-  margin-top:170px;
+  margin-top:100px;
   margin-right:600px;
+  top: 0;
 }
 .home-text h3{
   font-size: 40px;
